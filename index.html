@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toko Sepatu Adidas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Adidas Store</h1>
+      <nav>
+        <ul>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Sepatu Adidas Original</h2>
+      <p>Kualitas terbaik dan desain klasik</p>
+    </div>
+  </section>
+  <section class="produk" id="produk">
+    <div class="container">
+      <h2>Katalog Produk</h2>
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="adidas-navy.webp" alt="Adidas Handball Spezial Navy" />
+          <h3>Adidas Handball Spezial Navy</h3>
+          <p>Rp 1.750.000</p>
+          <button onclick="bukaFormulir('Handball Spezial Navy')">Pesan Sekarang</button>
+
+        </div>
+        <div class="produk-item">
+          <img src="adidas-manchester.jpg" alt="Adidas SPZL Greater Manchester" />
+          <h3>Adidas SPZL Greater Manchester</h3>
+          <p>Rp 2.200.000</p>
+          <button onclick="bukaFormulir('SPZL Greater Manchester')">Pesan Sekarang</button>
+        </div>
+        <div class="produk-item">
+          <img src="adidas-skyblue.jpg" alt="Adidas Spezial ice Blue" />
+          <h3>Adidas Spezial Ice Blue</h3>
+          <p>Rp 1.850.000</p>
+          <button onclick="bukaFormulir('Handball Spezial ice blue')">Pesan Sekarang</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <div id="formulir-popup" class="popup-formulir">
+    <div class="form-container">
+      <span class="close" onclick="tutupFormulir()">&times;</span>
+      <h2>Formulir Pemesanan</h2>
+      <form action="#pesanan-diproses" method="get">
+  <label>Produk yang dipesan:</label>
+  <input type="text" id="produkInput" name="produk" readonly>
+
+  <label>Nama Lengkap:</label>
+  <input type="text" name="nama" required>
+
+  <label>Email:</label>
+  <input type="email" name="email" required>
+
+  <label>Jumlah:</label>
+  <input type="number" name="jumlah" min="1" value="1" required>
+
+  <label>Alamat Pengiriman:</label>
+  <textarea name="alamat" required></textarea>
+
+  <button type="submit">Kirim Pemesanan</button>
+
+      <div id="notif-sukses" class="notif-sukses" style="display:none;">Pemesanan Anda telah dikirim!</div>
+     
+</div>
+
+
+</form>
+
+    </div>
+  </div>
+   <script>
+    function bukaFormulir(namaProduk) {
+      document.getElementById('formulir-popup').style.display = 'block';
+      document.getElementById('produkInput').value = namaProduk;
+    }
+
+    function tutupFormulir() {
+      document.getElementById('formulir-popup').style.display = 'none';
+    }
+  </script>
+  <section class="tentang" id="tentang">
+    <footer><h2>Tentang Kami</h2>
+    <p>Kami menjual sepatu Adidas original dengan kualitas terbaik dan pengiriman cepat.</p>
+  </footer>
+  </section>
+ <section class="kontak" id="kontak">
+    <h2>Kontak</h2>
+    <p>IS2_10524079_AryaAdityaPriyatna</p>
+     <img src="1721060536132.jpg" alt width="300" />
+  </section>
+ <footer>
+    <p>&copy; 2025 Adidas Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

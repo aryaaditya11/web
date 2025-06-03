@@ -1,0 +1,348 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: #0073e6;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.produk {
+  padding: 60px 0;
+}
+
+.produk h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.produk-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.produk-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.produk-item:hover {
+  transform: translateY(-5px);
+}
+
+.produk-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produk-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.produk-item p {
+  color: #007b00;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.tentang, .kontak {
+  padding: 50px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .produk h2 {
+    font-size: 24px;
+  }
+
+  .produk-item h3 {
+    font-size: 16px;
+  }
+
+  .produk-item p {
+    font-size: 14px;
+  }
+}
+ body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .btn-pesan {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Kontainer pop-up form */
+    .popup {
+      display: none;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      max-width: 400px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    /* Checkbox hack */
+    #show-form:checked ~ .popup {
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #0a0a23;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.produk {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.produk-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.produk-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.produk-item:hover {
+  transform: translateY(-5px);
+}
+
+.produk-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.produk-item h3 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+}
+
+.produk-item p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.produk-item button {
+  background: #0073e6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.produk-item button:hover {
+  background: #005bb5;
+}
+
+.popup-formulir {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.form-container {
+  background: white;
+  padding: 30px;
+  max-width: 500px;
+  margin: 80px auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 12px; right: 18px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+footer {
+  background: #0a0a23;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.popup-formulir {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  width: 90%;
+  max-width: 400px;
+
+  max-height: 90vh;         /* Batas tinggi popup */
+  overflow-y: auto;         /* Aktifkan scroll vertikal jika konten melebihi tinggi */
+}
+
